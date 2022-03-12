@@ -9,7 +9,7 @@ const Services = ({ services }) => {
       <h1 className={styles.subtitle}>Services we can help you with</h1>
       <div className={styles.services}>
         {services.map((service) => (
-          <Link key={service.id} href={`/products/${service.name}`} passHref>
+          <Link key={service.id} href={`/products/${service.name}`}>
             <div className={styles.service}>
               <div className={styles.desc}>{service.desc}</div>
               <span className={styles.cat}>{service.title}</span>
